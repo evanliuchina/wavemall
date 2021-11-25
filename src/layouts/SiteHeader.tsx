@@ -155,14 +155,14 @@ const Nav = props => {
                   <div className="px-2 space-y-1">
                     <a
                       href="/"
-                      className="flex bg-white dark:bg-black rounded-lg items-center flex-row text-center p-2 text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 hover:bg-gray-200 justify-center"
+                      className="flex bg-white dark:bg-black rounded-lg items-center flex-row text-center p-2 !text-gray-500 hover:!text-gray-800 dark:hover:!text-gray-300 hover:bg-gray-200 justify-center"
                       role="menuitem"
                       onClick={e => {
                         i18n.changeLanguage(i18n.language === 'en' ? 'zh' : 'en')
                         e.preventDefault()
                       }}
                     >
-                      <TranslateIcon className="w-5 h-5 mr-1" />
+                      <TranslateIcon className="w-5 h-5 mr-1 !text-gray-500 hover:!text-gray-800" />
                       <span>EN / 中</span>
                     </a>
                   </div>

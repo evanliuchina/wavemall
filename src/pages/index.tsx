@@ -21,7 +21,7 @@ export default function Home() {
                 <source src="/assets/home/hero-bg.mp4" type="video/mp4" />
               </video>
             </div>
-            <div className="relative px-4 py-48 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+            <div className="relative px-4 py-32 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
               <p className="mt-6 max-w-lg mx-auto text-center font-extralight text-3xl sm:text-5xl text-white sm:max-w-3xl uppercase">
                 an open global digital entertainment ecosystem
               </p>
