@@ -9,6 +9,12 @@ module.exports = {
       colors: {
         gray: colors.trueGray,
         cool: colors.coolGray,
+        lime: colors.lime,
+        cyan: colors.cyan,
+        teal: colors.teal,
+        sky: colors.sky,
+        mainColor: colors.teal,
+        secondaryColor: colors.cyan,
       },
     },
     screens: {
