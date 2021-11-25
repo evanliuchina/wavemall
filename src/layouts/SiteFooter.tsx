@@ -49,7 +49,7 @@ function SiteFooter() {
             </section>
           </div>
         </div>
-        <div className="cpr">© 2021 Wave Market {t('global.all rights reserved')}</div>
+        <div className="cpr">© 2021 Wave Mall {t('global.all rights reserved')}</div>
       </div>
     </footer>
   )

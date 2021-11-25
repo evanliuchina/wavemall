@@ -48,14 +48,14 @@ function App({ Component, pageProps }) {
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <title key="title">{t('Wave Market')}</title>
+        <title key="title">{t('Wave Mall')}</title>
 
-        <meta key="description" name="description" content="Wave Market" />
+        <meta key="description" name="description" content="Wave Mall" />
 
-        <meta name="application-name" content="Wave Market App" />
+        <meta name="application-name" content="Wave Mall App" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Wave Market App" />
+        <meta name="apple-mobile-web-app-title" content="Wave Mall App" />
 
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
@@ -63,8 +63,8 @@ function App({ Component, pageProps }) {
         <meta name="theme-color" content="#000000" />
 
         <meta key="twitter:card" name="twitter:card" content="app" />
-        <meta key="twitter:title" name="twitter:title" content="Wave Market App" />
-        <meta key="twitter:description" name="twitter:description" content="Wave Market" />
+        <meta key="twitter:title" name="twitter:title" content="Wave Mall App" />
+        <meta key="twitter:description" name="twitter:description" content="Wave Mall" />
       </Head>
       <ThemeProvider attribute="class">
         <ApolloProvider client={client}>

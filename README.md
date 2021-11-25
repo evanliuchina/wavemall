@@ -1,4 +1,4 @@
-## Wave Market
+## Wave Mall
 
 **update .env.production**
 
@@ -7,7 +7,7 @@
 ```bash
 yarn
 yarn build
-pm2 start npm --name "wavemarket" -- start
+pm2 start npm --name "wavemall" -- start
 ```
 
 **Update**
@@ -16,5 +16,5 @@ pm2 start npm --name "wavemarket" -- start
 git pull
 yarn
 yarn build
-pm2 restart wavemarket
+pm2 restart wavemall
 ```

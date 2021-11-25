@@ -32,7 +32,7 @@
   "auctions": "拍卖",
   "Auctions": "拍卖",
   "banners": {
-    "h1": "Wave Market Newton 测试网",
+    "h1": "Wave Mall Newton 测试网",
     "t1": "了解更多"
   },
   "basic description": "NFT 基本信息。所有项目均为必填项。",
@@ -124,7 +124,7 @@
   "home page": {
     "browse market": "浏览市场",
     "feature title": "推荐：Newton Collections",
-    "hero desc": "Wave Market 自由创建与交易 NFT",
+    "hero desc": "Wave Mall 自由创建与交易 NFT",
     "hero title": "创建并销售 NFT"
   },
   "hot": "热门",
@@ -222,7 +222,7 @@
   "report": "举报侵权",
   "round": "轮次",
   "royalty": "版权费",
-  "royalty description": "为该NFT设置版税率。您将在 Wave Market 上每次购买或拍卖后收到版税。一旦设置，就不能改变。",
+  "royalty description": "为该NFT设置版税率。您将在 Wave Mall 上每次购买或拍卖后收到版税。一旦设置，就不能改变。",
   "royalty fee": "版权费",
   "royalty rate": "版权费比率",
   "royalty receiving address": "版权费接收地址",
