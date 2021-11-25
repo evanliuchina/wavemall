@@ -168,7 +168,7 @@ let HomeHero = () => {
           </div>
           <div className="relative px-4 py-32 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <p className="mt-6 max-w-lg mx-auto text-center font-extralight text-3xl sm:text-5xl text-white sm:max-w-3xl uppercase">
-              an open global digital entertainment ecosystem
+              an open global digital entertainment market
             </p>
             <div className="mt-8 flex justify-center">
               <div className="inline-flex rounded-md shadow">
