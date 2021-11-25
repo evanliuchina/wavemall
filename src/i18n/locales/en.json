@@ -7,7 +7,7 @@
   "all": "All",
   "Andromeda": "Andromeda",
   "approve": "Approve",
-  "approve_NewMall_for_sale": "Approve NewMall For Sale",
+  "approve_NewMall_for_sale": "Approve For Sale",
   "approving": "approving...",
   "auction": "Auction",
   "Auction": "Auction",
@@ -21,7 +21,7 @@
   "auction_ends_in": "Auction ends in",
   "auctions": "Auctions",
   "banners": {
-    "h1": "NewMall.io is on NewChain Testnet",
+    "h1": "Wave Market is on Newton Testnet",
     "t1": "Learn more"
   },
   "basic description": "This basic info for NFT. All fields are required.",
@@ -81,7 +81,7 @@
   "event_bid": "Bid",
   "event_burn": "Burn",
   "event_cancel": "Cancel",
-  "event_minted": "Minted",
+  "event_minted": "Mint",
   "event_offer": "Offer",
   "event_sale": "Sale",
   "event_transfer": "Transfer",
@@ -97,7 +97,7 @@
   "for template": "Templates helps you to create your item.",
   "global": {
     "all rights reserved": "All rights reserved.",
-    "site title": "NewMall NFT Marketplace",
+    "site title": "Wave Market",
     "slogan": "Leading NFT Market"
   },
   "highest bid": "Highest bid",
@@ -106,7 +106,7 @@
   "home page": {
     "browse market": "Browse Market",
     "feature title": "Featured: Newton Collections",
-    "hero desc": "Start trading NFT freely with NewMall Marketplace",
+    "hero desc": "Start trading NFT freely with Wave Market",
     "hero title": "Create & Sell NFTs"
   },
   "hot": "Hot",
@@ -162,7 +162,7 @@
   "not for sale": "Not for sale",
   "numBids": "No. Bids",
   "oldest created": "Oldest Created",
-  "on sale": "On Sale",
+  "on sale": "For Sale",
   "operation fee": "Operation Fee",
   "order by": "Order By",
   "owner": "Owner",
@@ -202,7 +202,7 @@
   "report": "Report",
   "round": "Round",
   "royalty": "Royalty",
-  "royalty description": "Set royalty rate for this NFT. You will receive the royalty after every buy or auction on NewMall. Once set, it cannot be changed.",
+  "royalty description": "Set royalty rate for this NFT. You will receive the royalty after every buy or auction on Wave Market. Once set, it cannot be changed.",
   "royalty fee": "Royalty Fee",
   "royalty rate": "Royalty Rate",
   "royalty receiving address": "Royalty Receiving Address",

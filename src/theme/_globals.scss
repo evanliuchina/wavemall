@@ -45,29 +45,29 @@ body {
 
 // Nav
 #site-nav {
-  @apply px-0 pt-0 sticky md:px-2 top-0 md:top-0 z-30;
+  @apply px-0 pt-0 sticky top-0 md:top-0 z-30;
   .spacer_top {
     @apply mx-auto h-4 hidden md:-mx-2 md:block z-10;
     @apply bg-gray-50 dark:bg-black;
     overflow: hidden;
   }
   .navbar {
-    @apply max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 border-b md:border border-white shadow-xl md:rounded-2xl;
-    @apply bg-white bg-opacity-80;
-    @apply dark:bg-gray-900 dark:border-gray-800 dark:bg-opacity-80;
+    @apply w-full mx-auto px-2 sm:px-4 lg:px-6 shadow-xl;
+    @apply bg-white bg-opacity-90;
+    @apply dark:bg-gray-900 dark:bg-opacity-90;
     @extend .backdrop-blur;
     .wrapper {
-      @apply relative flex items-center justify-between py-1.5 md:py-2.5;
+      @apply max-w-7xl mx-auto relative flex items-center justify-between py-1.5 md:py-2.5;
     }
   }
   .desktop {
     @apply flex space-x-2 lg:space-x-4;
     .item {
       @apply rounded-md py-2 px-3 inline-flex items-center text-sm font-medium;
-      @apply hover:bg-gray-100 text-gray-700 hover:text-gray-900;
-      @apply dark:hover:bg-gray-800 dark:text-gray-100 dark:hover:text-gray-100;
+      @apply hover:bg-mainColor-100 text-gray-700 hover:text-mainColor-900;
+      @apply dark:text-gray-100 dark:hover:text-mainColor-100 dark:hover:bg-mainColor-200/10;
       &.active {
-        @apply text-gray-900 bg-yellow-400 bg-opacity-10 hover:bg-opacity-20;
+        @apply text-gray-900 bg-mainColor-400 bg-opacity-10 hover:bg-opacity-20;
         @apply dark:text-gray-100 dark:hover:text-gray-100;
       }
     }
@@ -90,7 +90,7 @@ body {
   }
 
   .lang-switch {
-    @apply flex flex-row bg-white rounded-lg items-center px-2 py-3 text-xs mr-2 hidden whitespace-nowrap md:flex;
+    @apply flex-row bg-white rounded-lg items-center px-2 py-3 text-xs mr-2 hidden whitespace-nowrap md:flex;
     @apply text-gray-500 bg-gray-100 hover:text-gray-700 hover:bg-gray-200;
     @apply dark:text-gray-400 dark:bg-gray-800 dark:hover:text-gray-100 dark:hover:bg-gray-700;
   }
@@ -110,18 +110,17 @@ body {
       a {
         @apply flex items-center;
         .logo {
-          @apply flex w-10 h-10 text-transparent;
+          @apply flex w-10 h-10;
         }
         .text {
-          @apply flex h-5 ml-2 hidden sm:inline-block;
-          @apply dark:text-white;
+          @apply h-8 ml-2 hidden sm:inline-block;
         }
       }
     }
     .desktop-menu {
       @apply hidden md:block sm:ml-6 sm:overflow-x-auto;
       .item svg {
-        @apply hidden lg:inline-block;
+        @apply hidden lg:inline-block text-mainColor-500;
       }
     }
   }
@@ -140,14 +139,14 @@ body {
 // Mobile Sidebar
 
 #mobile-sidebar {
-  @apply relative flex-1 flex flex-col max-w-xs w-full m-4 pt-5 pb-4 border-4 rounded-3xl border-yellow-400;
+  @apply relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 border-r-4 border-r-mainColor-500;
   @apply bg-white;
   @apply dark:bg-gray-900;
   .brand {
     @apply flex-shrink-0 flex flex-col items-center border-b pb-4;
     @apply dark:border-gray-800;
     > a {
-      @apply w-auto m-auto flex flex-row items-center space-x-2 pb-2 hover:text-yellow-400;
+      @apply w-auto m-auto flex flex-row items-center space-x-2 pb-2;
     }
   }
   nav {
@@ -156,14 +155,17 @@ body {
   }
   .item {
     @apply flex items-center px-2 py-2 text-base font-medium rounded-md;
-    @apply text-gray-800 hover:bg-gray-200;
-    @apply dark:text-gray-200 dark:hover:bg-gray-800;
+    @apply text-gray-800 hover:bg-mainColor-100;
+    @apply dark:text-gray-200 dark:hover:bg-mainColor-500/10 dark:hover:text-mainColor-200;
     &.active {
-      @apply bg-yellow-50 hover:bg-yellow-100;
+      @apply bg-mainColor-50 hover:bg-mainColor-100;
       @apply dark:bg-opacity-10 dark:hover:bg-opacity-20;
     }
     &.active svg {
-      @apply text-yellow-400;
+      @apply text-mainColor-500;
+    }
+    svg {
+      @apply text-mainColor-500;
     }
   }
   .icon {
@@ -246,7 +248,7 @@ body {
     header {
       @apply grid grid-cols-2 flex-row;
       h3 {
-        @apply font-mono text-white text-right text-gray-300 text-xs h-6;
+        @apply font-mono text-right text-gray-300 text-xs h-6;
         div {
           @apply text-gray-300;
         }
@@ -322,7 +324,7 @@ body {
 
 // List NFT Cards
 .list.nft_card_list {
-  @apply mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-4 md:grid-cols-3 lg:grid-cols-4;
+  @apply mt-4 grid grid-cols-2 sm:grid-cols-2 gap-2 md:gap-4 md:grid-cols-3 lg:grid-cols-4;
 
   .item {
     @apply col-span-1 flex flex-col text-center shadow-lg rounded-xl;
@@ -371,7 +373,7 @@ body {
       }
 
       .tl {
-        @apply absolute top-4 left-4 text-left;
+        @apply absolute top-2 left-2 mr-2 sm:top-4 sm:left-4 text-left text-tiny sm:text-xs;
       }
       .tr {
         @apply absolute top-4 right-4;
@@ -404,7 +406,7 @@ body {
     &:hover .cover .tr,
     &:hover .cover .bl,
     &:hover .cover .br {
-      @apply bg-opacity-50;
+      @apply bg-opacity-80 bg-mainColor-500;
     }
     // End Cover
   }
@@ -417,7 +419,7 @@ body {
     @apply flex-1 flex flex-col px-3 pb-1 text-left -mt-1;
 
     h3 {
-      @apply text-gray-800 text-lg sm:text-sm font-medium sm:font-normal truncate;
+      @apply text-gray-800 text-tiny font-medium sm:font-normal truncate;
       @apply dark:text-gray-300;
     }
 
@@ -435,10 +437,10 @@ body {
     @apply dark:border-gray-800;
     .tl {
       // Status Label
-      @apply flex-none text-xs uppercase;
+      @apply flex-none text-tiny uppercase;
     }
     .tr {
-      @apply flex-grow text-xs text-right text-gray-400 text-tiny;
+      @apply flex-grow text-right text-gray-400 text-tiny;
       em {
         @apply not-italic text-gray-500 font-light mr-2;
       }
@@ -447,7 +449,7 @@ body {
       @apply flex-shrink text-gray-500 font-light text-xs truncate pt-1 -mt-1;
     }
     .br.price {
-      @apply flex-grow text-gray-700 text-right text-sm sm:text-xs font-mono font-bold;
+      @apply flex-grow text-gray-700 text-right text-sm sm:text-xs font-mono;
       @apply dark:text-gray-300;
     }
 
@@ -695,6 +697,9 @@ button.primary {
   &.yellow {
     @apply text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-500;
   }
+  &.teal {
+    @apply text-white bg-mainColor-500 hover:bg-mainColor-600 focus:ring-mainColor-500;
+  }
   &.blue {
     @apply text-white bg-blue-500 hover:bg-blue-600 focus:ring-blue-500;
   }
@@ -728,6 +733,9 @@ button.primary.outline {
   &.yellow {
     @apply text-yellow-500 border-yellow-500 hover:text-white hover:bg-yellow-500 focus:ring-yellow-500;
   }
+  &.teal {
+    @apply text-mainColor-500 border-mainColor-500 hover:text-white hover:bg-mainColor-500 focus:ring-mainColor-500;
+  }
   &.blue {
     @apply text-blue-500 border-blue-500 hover:text-white hover:bg-blue-500 focus:ring-blue-500;
   }
@@ -755,6 +763,9 @@ button.secondary {
   @apply bg-green-100 text-green-500 hover:text-green-500 hover:bg-green-200 focus:ring-green-500;
   &.yellow {
     @apply bg-yellow-100 text-yellow-500 hover:text-yellow-500 hover:bg-yellow-200 focus:ring-yellow-500;
+  }
+  &.teal {
+    @apply bg-mainColor-100 text-mainColor-500 hover:text-mainColor-500 hover:bg-mainColor-200 focus:ring-mainColor-500;
   }
   &.blue {
     @apply bg-blue-100 text-blue-500 hover:text-blue-500 hover:bg-blue-200 focus:ring-blue-500;
@@ -792,6 +803,9 @@ button.tertiary {
   @apply bg-white text-green-500 hover:text-green-500 hover:bg-green-200 focus:ring-green-500;
   &.yellow {
     @apply text-yellow-500 hover:text-yellow-500 hover:bg-yellow-200 focus:ring-yellow-500;
+  }
+  &.teal {
+    @apply text-mainColor-500 hover:text-mainColor-500 hover:bg-mainColor-200 focus:ring-mainColor-500;
   }
   &.blue {
     @apply text-blue-500 hover:text-blue-500 hover:bg-blue-200 focus:ring-blue-500;
@@ -898,12 +912,12 @@ button.tertiary {
 
 // More Menu
 .more_menu {
-  @apply absolute inline-block text-left right-2 top-2;
+  @apply absolute inline-block text-left right-4 top-0;
 
   .menu_button {
     @apply inline-flex justify-center w-full rounded-full p-2 focus:outline-none focus:ring-0 focus:ring-offset-0;
-    @apply bg-gray-100 text-gray-500 hover:bg-yellow-500 hover:border-yellow-500;
-    @apply dark:bg-gray-800 dark:text-gray-500 dark:hover:bg-yellow-500 dark:hover:border-yellow-500;
+    @apply bg-gray-100 text-gray-500 hover:bg-mainColor-500 hover:border-mainColor-500;
+    @apply dark:bg-gray-800 dark:text-gray-500 dark:hover:bg-mainColor-500 dark:hover:border-mainColor-500;
     svg {
       @apply h-5 w-5;
     }
@@ -921,8 +935,8 @@ button.tertiary {
     }
     a {
       @apply block p-2 text-sm rounded;
-      @apply text-gray-700 hover:text-gray-900 hover:bg-gray-100;
-      @apply dark:text-gray-300 dark:hover:text-gray-200 dark:hover:bg-gray-900;
+      @apply text-gray-700 hover:text-black hover:bg-teal-100;
+      @apply dark:text-gray-300 dark:hover:text-white dark:hover:bg-teal-600;
     }
     label {
       @apply text-gray-400 block px-4 pt-2 text-xs uppercase font-medium;
@@ -945,7 +959,7 @@ button.tertiary {
       .token-uid {
         @apply flex;
         span {
-          @apply p-2 rounded-lg text-black dark:text-white text-xs bg-gray-100 dark:bg-gray-800 font-medium;
+          @apply p-2 rounded-lg text-black dark:text-black text-xs bg-gradient-to-br from-green-200 bg-cyan-200 dark:from-green-400 dark:bg-cyan-400 font-medium;
         }
       }
       .redeemable {
@@ -1270,7 +1284,7 @@ section.price-history {
   @apply relative;
   .dropdown-btn {
     @apply relative inline-flex items-center p-2 text-sm rounded-lg;
-    @apply text-black bg-yellow-400 hover:bg-yellow-500;
+    @apply text-black bg-mainColor-400 hover:bg-mainColor-500;
     span {
       @apply hidden sm:inline-block mx-2;
     }
@@ -1287,7 +1301,7 @@ section.price-history {
     @apply cursor-default select-none relative p-4 text-sm flex justify-between;
   }
   .check-icon {
-    @apply hidden h-5 w-5 text-yellow-500;
+    @apply hidden h-5 w-5 text-mainColor-500;
   }
   .active .check-icon {
     @apply block;
@@ -1432,7 +1446,7 @@ input[type='range']::-moz-range-thumb {
   }
   select {
     @apply mt-1 block w-full pl-3 pr-10 py-2 text-sm focus:outline-none focus:ring-0 sm:text-sm rounded-md;
-    @apply border-gray-300 focus:border-yellow-400;
+    @apply border-gray-300 focus:border-mainColor-400;
     @apply dark:bg-black dark:border-gray-800;
   }
 }

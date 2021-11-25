@@ -129,7 +129,7 @@ export function MakeBidModal(props) {
 
   return (
     <>
-      <button disabled={!balanceEnough} className="primary yellow" onClick={() => setShowModal(true)}>
+      <button disabled={!balanceEnough} className="primary teal" onClick={() => setShowModal(true)}>
         {balanceEnough ? title : t('insufficient balance')}
       </button>
       <Transition.Root show={showModal} as={Fragment}>
@@ -298,7 +298,7 @@ export function MakeBidModal(props) {
                 </main>
 
                 <footer>
-                  <button disabled={buttonDisabled} onClick={onConfirm} type="button" className="primary yellow">
+                  <button disabled={buttonDisabled} onClick={onConfirm} type="button" className="primary teal">
                     {buttonText}
                   </button>
                 </footer>

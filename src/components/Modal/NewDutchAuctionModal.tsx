@@ -172,7 +172,7 @@ export default function NewDutchAuctionModal(props) {
 
   return (
     <>
-      <button className="secondary small yellow" onClick={() => setShowModal(true)}>
+      <button className="secondary small teal" onClick={() => setShowModal(true)}>
         {t('start dutch auction')}
       </button>
       <Transition.Root show={showModal} as={Fragment}>
@@ -354,7 +354,7 @@ export default function NewDutchAuctionModal(props) {
                 </main>
 
                 <footer>
-                  <button disabled={buttonDisabled} onClick={onConfirm} type="button" className="primary yellow">
+                  <button disabled={buttonDisabled} onClick={onConfirm} type="button" className="primary teal">
                     {buttonText}
                   </button>
                 </footer>

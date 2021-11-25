@@ -26,9 +26,11 @@ function DetailSideBar(props) {
   const { nftToken } = props
   return (
     <div className="sidebar">
-      <NftAuctionCard {...props} />
-      {nftToken.strategyType === NFTokenSaleType.ENGLAND_AUCTION ? <NFTBidPriceHistory {...props} /> : <></>}
-      <NFTPriceHistory {...props} />
+      <div>
+        <NftAuctionCard {...props} />
+        {nftToken.strategyType === NFTokenSaleType.ENGLAND_AUCTION ? <NFTBidPriceHistory {...props} /> : <></>}
+        <NFTPriceHistory {...props} />
+      </div>
     </div>
   )
 }
@@ -46,7 +48,7 @@ export default function View() {
 
   useEffect(() => {
     logPageView()
-  },[])
+  }, [])
 
   useEffect(() => {
     getTokenInfoById(lookTokenID).then(data => {

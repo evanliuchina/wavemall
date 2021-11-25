@@ -351,7 +351,7 @@ function SellOrder() {
           <div>
             <button
               type="button"
-              className="primary small yellow"
+              className="primary small teal"
               hidden={orderStatus === OrderStatus.COMPLETED}
               onClick={() => cancelAuction(direcSellInfo.orderInfo.id)}
             >
@@ -458,7 +458,7 @@ function SellOrder() {
             <button
               hidden={!canCancel}
               type="button"
-              className="primary small yellow"
+              className="primary small teal"
               onClick={() => cancelAuction(englishAuctionSellInfo.orderInfo.id)}
             >
               {t('cancel')}

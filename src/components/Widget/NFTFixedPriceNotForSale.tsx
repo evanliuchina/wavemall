@@ -93,7 +93,7 @@ function NFTFixedPriceNotForSale(props) {
             }}
             type="button"
             disabled={isApproved}
-            className="primary secondary small yellow"
+            className="primary secondary small teal"
           >
             {approveText}
           </button>

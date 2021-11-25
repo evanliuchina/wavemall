@@ -25,13 +25,13 @@ function App({ Component, pageProps }) {
       window.ethereum.autoRefreshOnNetworkChange = false
     }
   })
- 
+
   useEffect(() => {
-    ReactGA.initialize(NEXT_PUBLIC_GOOGLE_ANALYTICS, { testMode: process.env.NODE_ENV === 'development'})
-    const errorHandler = (error) => {
+    ReactGA.initialize(NEXT_PUBLIC_GOOGLE_ANALYTICS, { testMode: process.env.NODE_ENV === 'development' })
+    const errorHandler = error => {
       ReactGA.exception({
         description: `${error.message} @ ${error.filename}:${error.lineno}:${error.colno}`,
-        fatal: true,
+        fatal: true
       })
     }
     window.addEventListener('error', errorHandler)
@@ -48,14 +48,14 @@ function App({ Component, pageProps }) {
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <title key="title">{t('NewMall')}</title>
+        <title key="title">{t('Wave Market')}</title>
 
-        <meta key="description" name="description" content="NewMall, Infrastructure for Metaverse" />
+        <meta key="description" name="description" content="Wave Market" />
 
-        <meta name="application-name" content="NewMall App" />
+        <meta name="application-name" content="Wave Market App" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="NewMall App" />
+        <meta name="apple-mobile-web-app-title" content="Wave Market App" />
 
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
@@ -63,8 +63,8 @@ function App({ Component, pageProps }) {
         <meta name="theme-color" content="#000000" />
 
         <meta key="twitter:card" name="twitter:card" content="app" />
-        <meta key="twitter:title" name="twitter:title" content="NewMall App" />
-        <meta key="twitter:description" name="twitter:description" content="NewMall, Infrastructure for Metaverse" />
+        <meta key="twitter:title" name="twitter:title" content="Wave Market App" />
+        <meta key="twitter:description" name="twitter:description" content="Wave Market" />
       </Head>
       <ThemeProvider attribute="class">
         <ApolloProvider client={client}>

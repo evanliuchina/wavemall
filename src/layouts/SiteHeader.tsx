@@ -2,7 +2,6 @@ import { Dialog, Transition } from '@headlessui/react'
 import {
   ArchiveIcon,
   ArrowSmLeftIcon,
-  FireIcon,
   StatusOnlineIcon,
   HomeIcon,
   MenuAlt1Icon,
@@ -11,7 +10,7 @@ import {
   TranslateIcon
 } from '@heroicons/react/outline'
 import React, { Fragment, useState } from 'react'
-import { NewMallLogo, NewMallText } from 'components/icons'
+import { WaveMarketLogo, WaveMarketText } from 'components/icons'
 
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -51,15 +50,14 @@ const Nav = props => {
   return (
     <>
       <nav id="site-nav">
-        <div className="spacer_top"></div>
         <nav className="navbar">
           <div className="wrapper">
             <div className="desktop-nav">
               <div className="brand">
                 <Link href="/">
                   <a>
-                    <NewMallLogo className="logo" />
-                    <NewMallText className="text" />
+                    <img src="/assets/wavemarket-logo.svg" alt="WaveMarket" className="logo" />
+                    <WaveMarketText className="text" />
                   </a>
                 </Link>
 
@@ -124,10 +122,10 @@ const Nav = props => {
             <div id="mobile-sidebar">
               <Transition.Child
                 as={Fragment}
-                enter="ease-in-out duration-300"
+                enter="ease-in-out duration-200"
                 enterFrom="opacity-0"
                 enterTo="opacity-100"
-                leave="ease-in-out duration-300"
+                leave="ease-in-out duration-200"
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
@@ -136,15 +134,15 @@ const Nav = props => {
                     className="ml-2 flex items-center justify-center bg-black bg-opacity-0 dark:bg-opacity-0 focus:outline-none"
                     onClick={() => setMobileSidebarOpen(false)}
                   >
-                    <ArrowSmLeftIcon className="h-10 w-10 text-yellow-400 " />
+                    <ArrowSmLeftIcon className="h-10 w-10 text-mainColor-500 " />
                   </button>
                 </div>
               </Transition.Child>
               <head className="brand">
                 <Link href="/">
                   <a>
-                    <NewMallLogo className="w-12 h-12" />
-                    <NewMallText className="w-auto h-7" />
+                    <img src="/assets/wavemarket-logo.svg" alt="WaveMarket" className="w-12 h-12" />
+                    <WaveMarketText className="w-auto h-8" />
                   </a>
                 </Link>
                 {t('global.slogan')}

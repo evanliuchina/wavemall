@@ -344,7 +344,7 @@ function BuyOrder() {
           bidOrderInfo.activeTitle = `${t('auction_ends_in')} ${DateTime(orderInfo.deadline)}`
           if (!isHigher) {
             bidOrderInfo.actionButton = (
-              <button type="button" className="primary small yellow" onClick={() => makeBid(orderInfo)}>
+              <button type="button" className="primary small teal" onClick={() => makeBid(orderInfo)}>
                 {t('raise bid')}
               </button>
             )

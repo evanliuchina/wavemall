@@ -9,7 +9,7 @@
   "all": "全部",
   "All": "全部",
   "approve": "授权",
-  "approve_NewMall_for_sale": "授权给NewMall销售",
+  "approve_NewMall_for_sale": "授权销售",
   "approving": "授权中...",
   "auction": "拍卖",
   "Auction": "拍卖",
@@ -32,7 +32,7 @@
   "auctions": "拍卖",
   "Auctions": "拍卖",
   "banners": {
-    "h1": "NewMall.io NFT 商城 NewChain 测试网",
+    "h1": "Wave Market Newton 测试网",
     "t1": "了解更多"
   },
   "basic description": "NFT 基本信息。所有项目均为必填项。",
@@ -114,7 +114,7 @@
   "for template": "模板帮助你创建你的项目。",
   "global": {
     "all rights reserved": "保留所有权利。",
-    "site title": "NewMall NFT 商城",
+    "site title": "Wave NFT 市场",
     "slogan": "领先的 NFT 市场"
   },
   "highest bid": "最高出价",
@@ -124,7 +124,7 @@
   "home page": {
     "browse market": "浏览市场",
     "feature title": "推荐：Newton Collections",
-    "hero desc": "开始在 NewMall 市场中自由的交易 NFT 吧",
+    "hero desc": "Wave Market 自由创建与交易 NFT",
     "hero title": "创建并销售 NFT"
   },
   "hot": "热门",
@@ -222,7 +222,7 @@
   "report": "举报侵权",
   "round": "轮次",
   "royalty": "版权费",
-  "royalty description": "为该NFT设置版税率。您将在NewMall上每次购买或拍卖后收到版税。一旦设置，就不能改变。",
+  "royalty description": "为该NFT设置版税率。您将在 Wave Market 上每次购买或拍卖后收到版税。一旦设置，就不能改变。",
   "royalty fee": "版权费",
   "royalty rate": "版权费比率",
   "royalty receiving address": "版权费接收地址",

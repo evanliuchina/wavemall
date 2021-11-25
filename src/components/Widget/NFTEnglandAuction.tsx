@@ -310,7 +310,7 @@ export function NFTEnglandAuction(props) {
               claimNft()
             }}
             type="button"
-            className="primary yellow small"
+            className="primary teal small"
           >
             {balanceEnough ? t('claim nft') : t('claim nft(insufficient balance)')}
           </button>

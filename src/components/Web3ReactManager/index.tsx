@@ -54,9 +54,9 @@ export default function Web3ReactManager({ children }: { children: JSX.Element }
   }
 
   // if neither context is active, spin
-  if (!active && !networkActive) {
-    return showLoader ? <div>loading...</div> : null
-  }
+  // if (!active && !networkActive) {
+  //   return showLoader ? <div>loading...</div> : null
+  // }
 
   return (
     <>

@@ -218,9 +218,9 @@ function Network() {
   const { chainId } = useWeb3React()
   let { t } = useTranslation()
   if (chainId === SupportedChainId.NEWCHAIN_TESTNET) {
-    return <span className="testnet">Newchain {t('wallet.testnet')}</span>
+    return <span className="testnet">Newton {t('wallet.testnet')}</span>
   } else if (chainId === SupportedChainId.NEWCHAIN) {
-    return <span className="mainnet">Newchain {t('wallet.mainnet')}</span>
+    return <span className="mainnet">Newton {t('wallet.mainnet')}</span>
     // TODO: ADD OTHER CHAIN ID
   } else {
     return <span className="testnet">Wrong Network</span>

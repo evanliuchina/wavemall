@@ -72,7 +72,7 @@ export default function BuyNowModal(props) {
 
   return (
     <>
-      <button disabled={!balanceEnough} className="primary" onClick={() => setShowModal(true)}>
+      <button disabled={!balanceEnough} className="primary teal" onClick={() => setShowModal(true)}>
         {balanceEnough ? t('buy now') : t('insufficient balance')}
       </button>
       <Transition.Root show={showModal} as={Fragment}>
@@ -173,7 +173,7 @@ export default function BuyNowModal(props) {
                 </main>
 
                 <footer>
-                  <button disabled={buttonDisabled} onClick={onConfirm} type="button" className="primary">
+                  <button disabled={buttonDisabled} onClick={onConfirm} type="button" className="primary teal">
                     {t('confirm')}
                   </button>
                 </footer>
